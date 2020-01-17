@@ -6,6 +6,7 @@ import { Platform, StatusBar, StyleSheet, View } from 'react-native'
 import { Ionicons } from '@expo/vector-icons'
 
 import AppNavigator from './navigation/AppNavigator'
+import Colors from './constants/Colors'
 
 export default function App(props) {
 	const [isLoadingComplete, setLoadingComplete] = useState(false)
@@ -57,6 +58,6 @@ function handleFinishLoading(setLoadingComplete) {
 const styles = StyleSheet.create({
 	container: {
 		flex: 1,
-		backgroundColor: '#fff',
+		backgroundColor: Colors.backgroundColor,
 	},
 })
